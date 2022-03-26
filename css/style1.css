@@ -1,0 +1,11 @@
+div .card div .card-body h1 {
+  font-size: 90px;
+}
+div .card div .card-body h1 h2 {
+  font-size: 60px;
+}
+div .card div .card-body h1 h2 .fa-brands {
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=style1.css.map */
