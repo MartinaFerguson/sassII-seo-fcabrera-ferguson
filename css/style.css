@@ -1,85 +1,22 @@
-body {
-  padding: 0;
-  margin: 0;
-  font-family: "Smooch Sans", sans-serif;
-  color: black;
-  background-color: white;
-}
+/* Error: Only 3 arguments allowed, but 4 were passed.
+ *     ,
+ * 1   | @mixin letras ($font, $color, $size){
+ *     |        ============================= declaration
+ * ... |
+ * 8   |     @include letras("Smooch Sans", sans-serif,black,90px)
+ *     |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ invocation
+ *     '
+ *   scss\base\__mixin.scss 8:5  letras()
+ *   scss\base\__mixin.scss 8:5  @import
+ *   scss\style.scss 2:9         root stylesheet */
 
-h1, h2, h3{
-  font-size: 90px;
-  color: black;
-  text-align: center;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: 'Error: Only 3 arguments allowed, but 4 were passed.\a     \2577 \a 1   \2502  @mixin letras ($font, $color, $size){\d\a     \2502         \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501  declaration\a... \2502 \a 8   \2502      @include letras("Smooch Sans", sans-serif,black,90px)\d\a     \2502      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ invocation\a     \2575 \a   scss\\base\\__mixin.scss 8:5  letras()\a   scss\\base\\__mixin.scss 8:5  @import\a   scss\\style.scss 2:9         root stylesheet';
 }
-
-.red-social {
-  text-align: center;
-}
-.red-social a {
-  text-decoration: none;
-  list-style: none;
-}
-.red-social a:hover {
-  padding: 2px 6px;
-  border-radius: 4px;
-  transition: 0, 5s;
-}
-.red-social .fa-brands {
-  padding: 10px;
-  font-size: 30px;
-  color: black;
-}
-
-.nav {
-  background-color: #c23333;
-  margin-bottom: 50px;
-}
-.nav .nav-link {
-  padding: 8px 12px;
-  border-radius: 3px;
-}
-.nav .text-sm-center {
-  color: white;
-  font-weight: 400;
-  font-size: 30px;
-  text-decoration: none;
-  list-style: none;
-}
-.nav .text-sm-center:hover,
-.nav .nav-link_active {
-  padding: 6px 10px;
-  border-radius: 4px;
-  background-color: black;
-  transition: 0.5s;
-  color: white;
-}
-
-#galeria {
-  margin-top: 80px;
-  margin-bottom: 100px;
-}
-#galeria img {
-  width: 100%;
-  height: auto;
-}
-#galeria img:hover {
-  border: 5px solid white;
-}
-#galeria .col-lg-4 {
-  padding: 25px;
-}
-
-footer {
-  margin-top: 100px;
-  margin-bottom: 80px;
-}
-footer .mb-3 {
-  margin-top: 20px;
-}
-footer h4 {
-  font-size: 70px;
-  color: black;
-  text-align: center;
-}
-
-/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,9 @@
+@mixin letras ($font, $color, $size){
+    font-family: $font;
+    color: $color;
+    font-size: $size;    
+}
+
+h1{
+    @include letras("Smooch Sans", sans-serif,black,90px)
+}
