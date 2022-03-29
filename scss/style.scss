@@ -3,11 +3,12 @@
 @import '../scss/base/_maps';
 
 
+
 body{
     padding: 0;
     margin: 0;
     @extend %fuente;
-    background-color:white;
+    background-color:map-get($general, bg-body);
     }
     h1, h2, h3{
         font-size: 90px;
@@ -29,7 +30,7 @@ body{
         }
     }
     .nav{
-        background-color: rgb(194, 51, 51);
+        background-color: map-get($general, bg-nav);
         margin-bottom: 50px;
         .nav-link{
             padding: 8px 12px;
@@ -45,14 +46,13 @@ body{
         .nav-link_active{
             padding: 6px 10px;
             border-radius: 4px;
-            background-color:black;
+            background-color: map-get($general, bg-navLink);
             transition: 0.5s;
             color: white;
         }
     }
     #galeria{
-        margin-top: 80px;
-        margin-bottom: 100px;
+        @extend %margins;
         img{
             width: 100%;
             height: auto;
@@ -66,8 +66,8 @@ body{
     }
 
     footer{
-        margin-top: 80px;
-        margin-bottom: 80px;
+        @extend %margins;
+
         .mb-3{
             margin-top: 20px;
         }

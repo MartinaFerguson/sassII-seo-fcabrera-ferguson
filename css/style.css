@@ -9,6 +9,11 @@ footer h4, h1, h2, h3, body {
   text-align: center;
 }
 
+footer, #galeria {
+  margin-top: 80px;
+  margin-bottom: 100px;
+}
+
 body {
   padding: 0;
   margin: 0;
@@ -55,10 +60,6 @@ h1, h2, h3 {
   color: white;
 }
 
-#galeria {
-  margin-top: 80px;
-  margin-bottom: 100px;
-}
 #galeria img {
   width: 100%;
   height: auto;
@@ -70,10 +71,6 @@ h1, h2, h3 {
   padding: 25px;
 }
 
-footer {
-  margin-top: 80px;
-  margin-bottom: 80px;
-}
 footer .mb-3 {
   margin-top: 20px;
 }
